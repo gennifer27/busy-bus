@@ -141,14 +141,14 @@ i {
 
 .current-route {
   background-color: #81F1B2;
-	padding: 12px 0 0 25px;
+	padding: 12px 0 0 2%;
   height: 75px;
   z-index: 1;
 }
 
 .route {
 	background-color: white;
-	padding: 12px 0 0 25px;
+	padding: 12px 0 0 2%;
 	border-bottom: solid #BCBBC1 .5px;
 	height: 75px;
 }
