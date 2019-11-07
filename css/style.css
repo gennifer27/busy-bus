@@ -135,7 +135,7 @@ i {
   position: relative;
   width: 100%;
   height: 75px;
-  z-index: 2;
+  z-index: 1;
   box-shadow: 0px 3px 3px rgba(52, 56, 144, 0.2);
 }
 
@@ -143,6 +143,7 @@ i {
   background-color: #81F1B2;
 	padding: 12px 0 0 25px;
   height: 75px;
+  z-index: 1;
 }
 
 .route {
@@ -273,11 +274,11 @@ i {
 }
 
 .bottom-navbar {
-	z-index: 10;
   width: 100%;
 	text-align: center;
 	background-color: #343890;
 	position: fixed;
+  z-index: 10 !important;
 	bottom: 0;
   height: 45px;
 }
