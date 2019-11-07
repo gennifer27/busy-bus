@@ -199,8 +199,8 @@ i {
 .current-route .learn-more-arrow {
   display: inline-block;
   position: relative;
-  top: -10px;
-  right: 20px;
+  top: -16%;
+  right: 3%;
   float: right;
   opacity: 100 !important;
   color: black;
@@ -208,14 +208,14 @@ i {
 
 .destination {
   display: inline-block;
-  font-size: 1em;
+  font-size: .95em;
   width: 55%;
-	line-height: 1.3em;
+	line-height: 1.2em;
 	float: left;
   padding: 8px 0 0 15px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .02em;
+  letter-spacing: .01em;
 }
 
 .direction {
@@ -239,7 +239,7 @@ i {
   line-height: 1.2;
 	font-weight: 500;
   text-align: right;
-	width: 25%;
+	width: 24%;
   padding-top: 8px;
   color: #8C8C8C;
   letter-spacing: .02em;
@@ -251,8 +251,8 @@ i {
   right: 5px;
   color: #8C8C8C;
   font-size: 0.75em;
-  line-height: 1.3;
-  width: 25%;
+  line-height: 1.2;
+  width: 24%;
   text-align: right;
   font-weight: 400;
   letter-spacing: .02em;
@@ -261,8 +261,8 @@ i {
 .learn-more-arrow {
   display: inline-block;
   position: relative;
-  top: -10px;
-  right: 20px;
+  top: -16%;
+  right: 3%;
   float: right;
   opacity: 0.3;
   color: gray;
