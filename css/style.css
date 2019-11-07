@@ -273,7 +273,7 @@ i {
 }
 
 .bottom-navbar {
-	z-index: 4;
+	z-index: 10;
   width: 100%;
 	text-align: center;
 	background-color: #343890;
