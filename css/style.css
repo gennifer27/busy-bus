@@ -51,7 +51,7 @@ nav {
   padding: 12px 0 12px 0;
   width: 100%;
   height: 75px;
-  grid-template-columns: 15% 50% 30% 5%;
+  grid-template-columns: 15% 50% 31% 4%;
   z-index: 2;
   box-shadow: 0px 2px 2px rgba(52, 56, 144, 0.2);
 }
@@ -64,7 +64,7 @@ nav {
   border-bottom: solid #BCBBC1 .5px;
   width: 100%;
   height: 75px;
-  grid-template-columns: 15% 50% 30% 5%;
+  grid-template-columns: 15% 50% 31% 4%;
 }
 
 .grid-container:hover {
@@ -180,43 +180,43 @@ h3 {
 }
 
 .destination {
-  font-size: .95em;
+  font-size: .9em;
 	line-height: 1em;
   text-align: left;
   padding-top: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .01em;
+  letter-spacing: 0em;
 }
 
 .direction {
   color: #8C8C8C;
-  font-size: 0.75em;
+  font-size: 0.65em;
 	line-height: .8em;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   text-align: left;
   font-weight: 400;
-  letter-spacing: .01em;
+  letter-spacing: .025em;
 }
 
 .next-bus {
-  font-size: .95em;
+  font-size: .9em;
   line-height: 1em;
 	font-weight: 700;
   text-align: right;
   padding-top: 10px;
   color: #8C8C8C;
-  letter-spacing: .02em;
+  letter-spacing: 0em;
 }
 
 .frequency {
   color: #8C8C8C;
-  font-size: 0.75em;
+  font-size: 0.65em;
   line-height: .8em;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   text-align: right;
   font-weight: 400;
-  letter-spacing: .02em;
+  letter-spacing: .025em;
 }
 
 .route .out-of-service, .route .reroute {
