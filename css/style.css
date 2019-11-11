@@ -18,15 +18,16 @@ body {
 	position: fixed;
  	top: 0;
 	width: 100%;
-  height: 1.5em;
+  height: 1.25em;
 	background-color: rgba(0, 0, 0, .25);
-  display: inline-block;
+  display: block;
+  vertical-align: middle;
   text-align: center;
 }
 
 .status-bar-items {
-  display: inline-block;
-  padding: 0px 1px 0px 1px;
+  display: inline;
+  padding-bottom: 1%;
   vertical-align: center;
 }
 
@@ -37,9 +38,72 @@ nav {
   z-index: 4;
   position: fixed;
   width: 100%;
-  box-shadow: 0px 4px 4px rgba(52, 56, 144, 0.2);
+  box-shadow: 0px 3px 3px rgba(52, 56, 144, 0.2);
   text-align: center;
   font-size: 1.5em;
+}
+
+
+.current-grid-container {
+  display: grid;
+  grid-gap: 0px;
+  background-color: #81F1B2;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  height: 75px;
+  grid-template-columns: 15% 50% 30% 5%;
+  z-index: 2;
+  box-shadow: 0px 2px 2px rgba(52, 56, 144, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0px;
+  background-color: white;
+  padding: 12px 0 12px 0;
+  border-bottom: solid #BCBBC1 .5px;
+  width: 100%;
+  height: 75px;
+  grid-template-columns: 15% 50% 30% 5%;
+}
+
+.grid-container:hover {
+	background-color: #fcfcfc;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin-left: 15%;
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 1;
+
+}
+
+.item3 {
+  grid-column: 2;
+  grid-row: 2;
+
+}
+
+.item4 {
+  grid-column: 3;
+  grid-row: 1;
+  margin-right: 15%;
+}
+
+.item5 {
+  grid-column: 3;
+  grid-row: 2;
+  margin-right: 15%;
+}
+
+.item6 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
 }
 
 h1 {
@@ -58,69 +122,6 @@ h3 {
   vertical-align: middle;
 }
 
-i {
-  display: inline-block;
-}
-
-.mobile-battery, .mobile-battery, .mobile-time, .fa-signal, .fa-wifi  {
-  display: inline-block;
-  color: white;
-  vertical-align: top;
-}
-
-.fa-exclamation-circle, .fa-chevron-left{
-	float: left;
-  color: white;
-  display: inline-block;
-  position: relative;
-}
-
-.fa-camera, h1 {
-  color: white;
-  display: inline-block;
-  position: relative;
-}
-
-.fa-search, .fa-star, .fa-battery-three-quarters {
-  color: white;
-  display: inline-block;
-  position: relative;
-  float: right;
-}
-
-.fa-exclamation-circle, .fa-camera, .fa-search {
-  padding: .35em 1em .35em 1em;
-  font-size: 1.55em;
-  display: inline-block;
-  position: relative;
-}
-
-.fa-signal, .fa-wifi {
-  margin-top: -1px;
-}
-
-.mobile-time {
-  width: 20em;
-  text-align: center;
-  margin-bottom: 4px;
-}
-
-.mobile-service {
-  text-align: left;
-  margin-bottom: 7px;
-}
-
-.mobile-battery {
-  text-align: right;
-  margin-bottom: 5px;
-  margin-left: 30px;
-}
-
-.fa-battery-three-quarters {
-  margin: 3px 3px 0 0;
-  text-align: right;
-}
-
 .map {
   padding-top: 80px;
   position: relative;
@@ -131,37 +132,19 @@ i {
 	margin-bottom: 45px;
 }
 
-.current {
-  position: relative;
-  width: 100%;
-  height: 75px;
-  z-index: 1;
-  box-shadow: 0px 3px 3px rgba(52, 56, 144, 0.2);
-}
-
 .current-route {
   background-color: #81F1B2;
-	padding: 12px 0 0 2%;
+  width: 100%;
   height: 75px;
-  z-index: 1;
-}
-
-.route {
-	background-color: white;
-	padding: 12px 0 0 2%;
-	border-bottom: solid #BCBBC1 .5px;
-	height: 75px;
-}
-
-.route:hover {
-	background-color: #fcfcfc;
+  z-index: 2;
+  display: block;
+  position: relative;
+  box-shadow: 0px 2px 2px rgba(52, 56, 144, 0.2);
 }
 
 .bus {
-  display: inline-block;
   font-weight: 600;
 	font-size: 1.15em;
-	float: left;
 }
 
 .circle {
@@ -174,7 +157,7 @@ i {
   background: #BBF5D5;
 }
 
-.main-route {
+.current-circle {
   height: 53px;
   width: 53px;
   text-align: center;
@@ -196,81 +179,48 @@ i {
   font-weight: 600;
 }
 
-.current-route .learn-more-arrow {
-  display: inline-block;
-  position: relative;
-  top: -16%;
-  right: 3%;
-  float: right;
-  opacity: 100 !important;
-  color: black;
-}
-
 .destination {
-  display: inline-block;
   font-size: .95em;
-  width: 60%;
-	line-height: 1.2em;
-	float: left;
-  padding: 8px 0 0 15px;
-  font-weight: 600;
+	line-height: 1em;
+  text-align: left;
+  padding-top: 10px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .01em;
 }
 
 .direction {
-  display: inline-block;
   color: #8C8C8C;
   font-size: 0.75em;
-  width: 60%;
-	line-height: 1.2;
-	float: left;
-  padding-left: 15px;
-  padding-top: 3px;
+	line-height: .8em;
+  padding-bottom: 6px;
+  text-align: left;
   font-weight: 400;
   letter-spacing: .01em;
 }
 
 .next-bus {
-	display: inline-block;
-  position: relative;
-  right: 5px;
   font-size: .95em;
-  line-height: 1.2;
-	font-weight: 500;
+  line-height: 1em;
+	font-weight: 700;
   text-align: right;
-	width: 20%;
-  padding-top: 8px;
+  padding-top: 10px;
   color: #8C8C8C;
   letter-spacing: .02em;
 }
 
 .frequency {
-  display: inline-block;
-  position: relative;
-  right: 5px;
   color: #8C8C8C;
   font-size: 0.75em;
-  line-height: 1.2;
-  width: 20%;
+  line-height: .8em;
+  padding-bottom: 6px;
   text-align: right;
   font-weight: 400;
   letter-spacing: .02em;
 }
 
-.learn-more-arrow {
-  display: inline-block;
-  position: relative;
-  top: -16%;
-  right: 3%;
-  float: right;
-  opacity: 0.3;
-  color: gray;
-}
-
-.out-of-service, .reroute {
+.route .out-of-service, .route .reroute {
 	color: #FC5E21;
-  text-transform: uppercase;
 }
 
 .bottom-navbar {
@@ -281,4 +231,82 @@ i {
   z-index: 10 !important;
 	bottom: 0;
   height: 45px;
+}
+
+/* Icons */
+
+i {
+  display: inline;
+}
+
+.mobile-battery, .fa-battery-three-quarters, .mobile-time, .fa-signal, .fa-wifi  {
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.fa-exclamation-circle, .fa-chevron-left{
+	float: left;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.fa-camera, h1 {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.fa-search, .fa-star {
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.fa-exclamation-circle, .fa-camera, .fa-search {
+  padding: .35em 1em .35em 1em;
+  font-size: 1.55em;
+  display: inline-block;
+  position: relative;
+}
+
+.fa-signal, .fa-wifi {
+  width: 3%;
+  text-align: left;
+  color: white;
+}
+
+.mobile-time {
+  width: 75%;
+  text-align: center;
+}
+
+.mobile-service {
+  width: 3%;
+  text-align: left;
+}
+
+.mobile-battery, .fa-battery-three-quarters {
+  width: 5%;
+  text-align: right;
+}
+
+.current-route .learn-more-arrow {
+  opacity: 100 !important;
+  color: black;
+  line-height: 1em;
+  padding-top: 19px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.learn-more-arrow {
+  opacity: 0.3;
+  color: gray;
+  line-height: 1em;
+  padding-top: 19px;
+  text-align: right;
+  vertical-align: middle;
 }
