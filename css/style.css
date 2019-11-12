@@ -18,17 +18,24 @@ body {
 	position: fixed;
  	top: 0;
 	width: 100%;
-  height: 1.25em;
+  height: 1.5em;
 	background-color: rgba(0, 0, 0, .25);
   display: block;
   vertical-align: middle;
-  text-align: center;
 }
 
-.status-bar-items {
+.status-time {
   display: inline;
-  padding-bottom: 1%;
-  vertical-align: center;
+  vertical-align: top;
+  float: left;
+  margin-top: -3px;
+}
+
+.status-icons {
+  display: inline;
+  vertical-align: top;
+  float: right;
+  margin-top: -3px;
 }
 
 nav {
@@ -239,12 +246,6 @@ i {
   display: inline;
 }
 
-.mobile-battery, .fa-battery-three-quarters, .mobile-time, .fa-signal, .fa-wifi  {
-  display: inline-block;
-  color: white;
-  position: relative;
-}
-
 .fa-exclamation-circle, .fa-chevron-left{
 	float: left;
   color: white;
@@ -270,27 +271,6 @@ i {
   font-size: 1.55em;
   display: inline-block;
   position: relative;
-}
-
-.fa-signal, .fa-wifi {
-  width: 3%;
-  text-align: left;
-  color: white;
-}
-
-.mobile-time {
-  width: 75%;
-  text-align: center;
-}
-
-.mobile-service {
-  width: 3%;
-  text-align: left;
-}
-
-.mobile-battery, .fa-battery-three-quarters {
-  width: 5%;
-  text-align: right;
 }
 
 .current-route .learn-more-arrow {
